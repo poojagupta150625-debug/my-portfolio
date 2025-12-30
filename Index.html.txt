@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio | Fiverr Developer</title>
+    <link rel="stylesheet" href="Index.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #2d3436;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2d3436;
+            margin-top: 30px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .skill {
+            background: #f8f9fa;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #dee2e6;
+        }
+        .contact {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👨‍💻 My Professional Portfolio</h1>
+        <p>Welcome to my GitHub portfolio! I'm a web developer offering services on Fiverr.</p>
+        
+        <h2>🌟 About Me</h2>
+        <p>I create responsive, modern websites using the latest web technologies. I focus on clean code and user-friendly designs.</p>
+        
+        <h2>🛠 My Skills</h2>
+        <div class="skills">
+            <span class="skill">HTML5</span>
+            <span class="skill">CSS3</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Responsive Design</span>
+            <span class="skill">Git & GitHub</span>
+            <span class="skill">Web Development</span>
+        </div>
+        
+        <h2>📂 Projects</h2>
+        <ul>
+            <li><strong>Portfolio Website</strong> - This current project</li>
+            <li><strong>Business Landing Page</strong> - Responsive design</li>
+            <li><strong>More coming soon...</strong></li>
+        </ul>
+        
+        <div class="contact">
+            <h2>📞 Contact Me</h2>
+            <p><strong>Fiverr:</strong> [Your Fiverr Profile Link Here]</p>
+            <p><strong>GitHub:</strong> https://github.com/your-username</p>
+            <p><strong>Email:</strong> your.email@example.com</p>
+        </div>
+        
+        <footer>
+            <p>© 2024 My Portfolio | Made with ❤️ for Fiverr Clients</p>
+            <p>This portfolio is hosted on GitHub Pages</p>
+        </footer>
+    </div>
+</body>
+</html>
