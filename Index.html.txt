@@ -82,9 +82,9 @@
         
         <div class="contact">
             <h2>📞 Contact Me</h2>
-            <p><strong>Fiverr:</strong> [Your Fiverr Profile Link Here]</p>
-            <p><strong>GitHub:</strong> https://github.com/your-username</p>
-            <p><strong>Email:</strong> your.email@example.com</p>
+            <p><strong>Fiverr:</strong> <p>Check out my freelance work on <a href="https://www.fiverr.com/pooja.gupta_15" target="_blank">Fiverr</a>.</p></p>
+            <p><strong>GitHub:</strong> https://github.com/poojagupta150625-debug</p>
+            <p><strong>Email:</strong> poojagupta150625@gmail.com</p>
         </div>
         
         <footer>
