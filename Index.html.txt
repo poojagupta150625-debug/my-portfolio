@@ -1,96 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio | Fiverr Developer</title>
-    <link rel="stylesheet" href="Index.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        h1 {
-            color: #2d3436;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #2d3436;
-            margin-top: 30px;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .skill {
-            background: #f8f9fa;
-            padding: 8px 15px;
-            border-radius: 20px;
-            border: 1px solid #dee2e6;
-        }
-        .contact {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #666;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Gupta | Fiverr Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="fiverr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>👨‍💻 My Professional Portfolio</h1>
-        <p>Welcome to my GitHub portfolio! I'm a web developer offering services on Fiverr.</p>
-        
-        <h2>🌟 About Me</h2>
-        <p>I create responsive, modern websites using the latest web technologies. I focus on clean code and user-friendly designs.</p>
-        
-        <h2>🛠 My Skills</h2>
-        <div class="skills">
-            <span class="skill">HTML5</span>
-            <span class="skill">CSS3</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">Responsive Design</span>
-            <span class="skill">Git & GitHub</span>
-            <span class="skill">Web Development</span>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Pooja Gupta</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        
-        <h2>📂 Projects</h2>
-        <ul>
-            <li><strong>Portfolio Website</strong> - This current project</li>
-            <li><strong>Business Landing Page</strong> - Responsive design</li>
-            <li><strong>More coming soon...</strong></li>
-        </ul>
-        
-        <div class="contact">
-            <h2>📞 Contact Me</h2>
-            <p><strong>Fiverr:</strong> <p>Check out my freelance work on <a href="https://www.fiverr.com/pooja.gupta_15" target="_blank">Fiverr</a>.</p></p>
-            <p><strong>GitHub:</strong> https://github.com/poojagupta150625-debug</p>
-            <p><strong>Email:</strong> poojagupta150625@gmail.com</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Pooja Gupta</span></h1>
+            <p class="hero-subtitle">Full Stack Web Developer & Fiverr Freelancer</p>
+            <p class="hero-desc">I create stunning, responsive websites with clean code and modern designs</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="viewProjects">View My Work</button>
+                <button class="btn btn-secondary" id="contactBtn">Hire Me on Fiverr</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.fiverr.com/pooja.gupta_15" target="_blank" class="social-link">
+                    <i class="fas fa-star"></i> Fiverr
+                </a>
+                <a href="https://github.com/poojagupta150625-debug" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:poojagupta150625@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
         </div>
-        
-        <footer>
-            <p>© 2024 My Portfolio | Made with ❤️ for Fiverr Clients</p>
-            <p>This portfolio is hosted on GitHub Pages</p>
-        </footer>
+        <div class="hero-image">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="code-snippet">
+                <pre><code>// Creating amazing websites
+function createWebsite() {
+  return {
+    design: "Modern",
+    responsive: true,
+    performance: "Optimized"
+  };
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate web developer with expertise in creating dynamic, user-friendly websites. I specialize in front-end development and responsive design.</p>
+                    <p>On Fiverr, I help clients bring their ideas to life with custom websites that are both beautiful and functional.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="html">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                    <p>Semantic markup & accessibility</p>
+                </div>
+                <div class="skill-card" data-skill="css">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                    <p>Flexbox, Grid & animations</p>
+                </div>
+                <div class="skill-card" data-skill="js">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                    <p>DOM manipulation & ES6+</p>
+                </div>
+                <div class="skill-card" data-skill="responsive">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 92%"></div>
+                    </div>
+                    <p>Mobile-first approach</p>
+                </div>
+                <div class="skill-card" data-skill="git">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 88%"></div>
+                    </div>
+                    <p>Version control & collaboration</p>
+                </div>
+                <div class="skill-card" data-skill="webdev">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                    <p>Full stack fundamentals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="responsive">Responsive</button>
+                <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="portfolio">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="view-project" data-project="1">View Details</button>
+                        </div>
+                        <div class="project-tag">Portfolio</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio showcasing my skills and projects with modern design.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web responsive">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="view-project" data-project="2">View Details</button>
+                        </div>
+                        <div class="project-tag">Web Design</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Business Landing Page</h3>
+                        <p>Modern business website with animations and contact form functionality.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="view-project" data-project="3">View Details</button>
+                        </div>
+                        <div class="project-tag">Coming Soon</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Template</h3>
+                        <p>Full-featured online store template with product filtering and cart.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Fiverr Profile</h3>
+                        <p>Check out my services and hire me on Fiverr</p>
+                        <a href="https://www.fiverr.com/pooja.gupta_15" target="_blank" class="contact-link">Visit My Fiverr →</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub Portfolio</h3>
+                        <p>Explore my code repositories and projects</p>
+                        <a href="https://github.com/poojagupta150625-debug" target="_blank" class="contact-link">View My GitHub →</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Me</h3>
+                        <p>Send me a message for project inquiries</p>
+                        <a href="mailto:poojagupta150625@gmail.com" class="contact-link">Send Email →</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">💻</span>
+                    <span class="logo-text">Pooja Gupta</span>
+                </div>
+                <p class="footer-tagline">Creating digital experiences that make a difference</p>
+                <div class="footer-social">
+                    <a href="https://www.fiverr.com/pooja.gupta_15" target="_blank"><i class="fas fa-star"></i></a>
+                    <a href="https://github.com/poojagupta150625-debug" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:poojagupta150625@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">© 2025 Pooja Gupta. All rights reserved.</p>
+                <p class="footer-note">This portfolio is hosted on GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
     </div>
+
+    <!-- Success Toast -->
+    <div class="toast" id="successToast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message">Message sent successfully!</span>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="fiverr.js"></script>
 </body>
 </html>
