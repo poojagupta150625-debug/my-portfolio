@@ -3,7 +3,7 @@
 Welcome to my professional web development portfolio! I'm a full-stack developer offering services on Fiverr.
 
 ## 🌟 Live Demo
-👉 **[View Live Portfolio](https://poojagupta150625-debug.github.io/my-portfolio/)**
+👉 **[([Live Demo](https://poojagupta150625-debug.github.io/about-me/))**
 
 ## 📋 About This Project
 This is a responsive, modern portfolio website showcasing my skills, projects, and services. Built with:
